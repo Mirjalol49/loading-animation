@@ -1,0 +1,135 @@
+/* VARIABLES */
+
+:root {
+    /* --main-text-color : #fff; */
+    /* --main-bg-color : #fff; */
+    /* --main-font-size : 16px; */
+    /* --main-font-weight : 400; */
+    /* --main-line-height : 1.5; */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* GENERAL */
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    height: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: --, "Arial", sans-serif;
+    background-color: #3A5267;
+}
+
+
+/* VISUALLY-HIDDEN */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+/* CONTAINER */
+
+.container {
+    max-width: YOUR CONTAINER MAX-WIDTH PX HERE;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+/* STICKY-FOOTER */
+
+.site-main {
+    flex-grow: 1;
+}
+
+ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    width: 20px;
+    height: 80px;
+    background: #E1ECF6;
+    margin: 0 4px;
+    animation: ani 0.7s infinite alternate;
+}
+
+@keyframes ani {
+    0% {
+        transform: scaleY(1);
+    }
+    25% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(1);
+    }
+    75% {
+        transform: scaleY(1);
+    }
+    100% {
+        transform: scaleY(3);
+    }
+}
+
+ul li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+ul li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+ul li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+ul li:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+ul li:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+ul li:nth-child(6) {
+    animation-delay: 0.6s;
+}
